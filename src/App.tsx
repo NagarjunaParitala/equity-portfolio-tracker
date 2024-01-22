@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import { ConfigProvider } from 'antd';
 import './App.css';
+import LoginComponent from './components/LoginComponent';
+import AppLayout from './components/AppLayout';
+import { Route, Routes } from 'react-router-dom';
+import StockPriceChart from './components/StocksPriceChart';
+
 
 function App() {
   return (
+    <ConfigProvider theme={{ token: { colorPrimary: '##195c98' } }}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<LoginComponent/>}></Route>
+        <Route path='/home' element={<AppLayout/>}></Route>
+        <Route path='/stockprice' element={<StockPriceChart/>}></Route>
+      </Routes>
     </div>
+    </ConfigProvider>
   );
 }
 
