@@ -55,7 +55,7 @@ const AppLayout: React.FC = () => {
   }
   
   return (
-    <Layout style={{minHeight:'100vh', zoom:"100%"}}>
+    <Layout style={{minHeight:'100vh', zoom:"90%"}}>
       {/* <Header style={{ display: 'flex', alignItems: 'center' }}>
         <div className="demo-logo" />
         <Menu
