@@ -37,3 +37,38 @@
     transform: rotate(360deg);
   }
 }
+
+.ant-checkbox-wrapper {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 1rem !important;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: "tnum";
+  display: inline-flex;
+  align-items: baseline;
+  line-height: unset;
+  cursor: pointer;
+}
+
+:where(.css-dev-only-do-not-override-ae6h97).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > th,
+:where(.css-dev-only-do-not-override-ae6h97).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > td {
+  border-bottom: 1px solid #f0f0f0;
+  max-height: 1.5rem !important;
+}
+
+ant-row {
+  display: flex;
+  flex-flow: row wrap;
+  min-width: 0;
+  max-height: 12rem !important;
+}

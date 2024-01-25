@@ -11,7 +11,7 @@ const columns: TableColumnsType<Company> = [
         dataIndex: 'logo',
         key: 'logo',
         width: 50,
-        render: (t, r) => <img src={`${r.logo}`} alt="logo"/>
+        render: (t, r) => <img src={`${r.logo}`} alt="logo" style={{maxHeight:'1.5rem !important'}}/>
       },
     {
       title: 'Name',

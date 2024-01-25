@@ -55,7 +55,7 @@ const AppLayout: React.FC = () => {
   }
   
   return (
-    <Layout style={{minHeight:'100vh'}}>
+    <Layout style={{minHeight:'100vh', zoom:"100%"}}>
       {/* <Header style={{ display: 'flex', alignItems: 'center' }}>
         <div className="demo-logo" />
         <Menu
@@ -101,7 +101,7 @@ const AppLayout: React.FC = () => {
                   </Col>
                 </Row>
                 <Divider></Divider>       
-                <Row>
+                <Row style={{maxHeight:'12rem !important'}}>
                 <Col span={12} style={{padding:'0.5rem'}}>
                     <label style={{fontSize:'medium',fontWeight:'bold'}}>Stock Price</label>  
                     <StockPriceChart></StockPriceChart>
@@ -112,7 +112,7 @@ const AppLayout: React.FC = () => {
                 </Col>
                 </Row>
                 <Divider></Divider>
-                <Row>
+                <Row style={{maxHeight:'12rem !important'}}>
                 <Col span={12} style={{padding:'0.5rem'}}>
                 <label style={{fontSize:'medium',fontWeight:'bold'}}>Profile</label>
                     <CompanyProfileComponent companyProfileData={companyPortfolio}></CompanyProfileComponent>
