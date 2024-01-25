@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Divider, Radio, Table } from 'antd';
+import {  Table } from 'antd';
 import type { TableColumnsType } from 'antd';
 import { Company, IChildProps } from '../datatypes/CustomDataTypes';
 import { companiesList } from '../datatypes/stockData';

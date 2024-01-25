@@ -53,9 +53,7 @@ const AppLayout: React.FC = () => {
       setCompanyPortfolio(filteredCompanyProfiles);
     }
   }
-
-
-
+  
   return (
     <Layout style={{minHeight:'100vh'}}>
       {/* <Header style={{ display: 'flex', alignItems: 'center' }}>
